@@ -188,8 +188,6 @@ animationView?.play(completion: { (finished) in
 
 ## 目前还不支持的After Effects 特性
 
----
-
 - 奇偶绕组路径(Even-Odd winding paths)
 - 合并形状(Merge Shapes)
 - 裁切路径中的个别裁切形状功能(Trim Shapes Individually feature of Trim Paths)
@@ -201,8 +199,6 @@ animationView?.play(completion: { (finished) in
 
 ## 安装Lottie
 
----
-
 ### CocoaPods
 在你的podfile中添加：
 `pod 'lottie-ios'`
@@ -212,15 +208,12 @@ animationView?.play(completion: { (finished) in
 `pod install`
 
 ### Carthage
-
 安装Carthage([](https://github.com/Carthage/Carthage)) 向你的Cartfile添加Lottie：
 `github "airbnb/lottie-ios" "master"`
 运行
 `carthage update`
 
 ## 试试看
-
----
 
 Lottie入驻了Cocoapods！通过Cocoapod获取或克隆这个仓库,下载完成后导入Lottie`#import <Lottie / Lottie.h>`，并尝试使用示例代码。
 
@@ -233,24 +226,19 @@ Lottie入驻了Cocoapods！通过Cocoapod获取或克隆这个仓库,下载完�
 - 由 [Alex Pawlowski](https://github.com/pawlowskialex)添加的对MacOS的支持
 
 ## 替补方案
-
----
-
 1. 手动地创建动画。手动创建动画对于设计师以及iOS、Android工程师而言意味着付出巨额的时间。通常很难，即使花费这么多时间来开发动画也几乎很难达到理想的效果。
 2. [Facebook Keyframes](https://github.com/facebookincubator/Keyframes)。 Keyframes是专门用来构建用户界面的， 是FaceBook的一个很棒，很新的库。但是Keyframes不支持一些Lottie所能支持的特性，比如： 遮罩，蒙版，裁切路径，虚线样式还有很多。
 3. Gifs。Gifs 占用的大小是bodymovin生成的JSON大小的2倍还多，并且渲染的尺寸是固定的，并不能放大来适应更大更高分辨率的屏幕。
 4. Png序列桢动画。 Png序列桢动画 甚至比gifs更糟糕，它们的文件大小通常是 bodymovin json文件大小的30-50倍，并且也不能被放大。
 
 ## 为什么叫Lottie？
-
 Lottie以德国电影导演(剪影动画的最早的开拓者)命名。 她最着名的电影是“阿赫迈德王子历险记”（1926年） - 最古老的长篇动画电影。比华特迪士尼的长篇电影白雪公主和七个小矮人（1937）早十多年[The art of Lotte Reineger](https://www.youtube.com/watch?v=LvU55CUw5Ck&feature=youtu.be)
 
 ## 贡献
-
 贡献者是非常受欢迎的。 只需上传项目并且包含您的更改说明。
 如果你想添加更多的JSON文件，随意这样做！
 
-##### 问题或者功能需求？
+## 问题或者功能需求？
 可以在github的issues专栏上提出任何超乎预期崩溃问题。如果After Effects 文件并没有起作用的话，请在issue上附上它。没有源文件来排除故障是相当困难的。
 
 ## 技术路线(没有特别的顺序)
