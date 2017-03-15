@@ -21,7 +21,7 @@ Lottie 也创造性地支持原生的UIViewController 的转场动画。
 ![](https://github.com/airbnb/lottie-ios/raw/master/_Gifs/Examples3.gif)
 ![](https://github.com/airbnb/lottie-ios/raw/master/_Gifs/Examples4.gif)
 
-##使用Lottie
+<h2>使用Lottie</h2>
 
 Lottie支持iOS 8 及其以上系统。当我们把动画需要的images资源文件添加到Xcode的目标工程的后，Lottie 就可以通过JSON文件或者包含了JSON文件的URL来加载动画。
 
