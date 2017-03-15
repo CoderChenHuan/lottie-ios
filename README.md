@@ -83,6 +83,7 @@ Lottie 带有一个`UIViewController`动画控制器，可以用来自定义转�
 
 <h2>Swift 支持</h2>
 ----
+
 Lottie 在Swift下也表现的很好！在你的swift 类上方简单地`improt Lottie`，然后就可以按照下面的方式使用Lottie了：
 ```
 let animationView = LOTAnimationView.animationNamed("hamburger")
@@ -92,7 +93,8 @@ animationView?.play(completion: { (finished) in
   // Do Something
 })
 ```
-##支持的After Effects 的特性
+
+<h2>支持的After Effects 的特性</h2>
 -----
 <h3>关键帧插值（Keyframe Interpolation）</h3>
 - 线性插值(Linear Interpolation)
