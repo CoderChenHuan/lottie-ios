@@ -1,4 +1,4 @@
-#Lottie 应用于iOS、MacOS(以及[Android](https://github.com/airbnb/lottie-android) 和[React Native](https://github.com/airbnb/lottie-react-native))
+Lottie 应用于iOS、MacOS(以及[Android](https://github.com/airbnb/lottie-android) 和[React Native](https://github.com/airbnb/lottie-react-native))
 ------
 * 本文由CRAnimation团队翻译
 * 本项目iOS版本原地址：[airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
@@ -6,7 +6,6 @@
 * 翻译：小9
 * 校正：熊熊
 * QQ群：547897182（iOS动效特工队）
-* 2017/03/16
 
 Lottie 是一个可应用于Andriod和iOS的动画库，它通过[bodymovin](https://github.com/bodymovin/bodymovin)插件来解析[Adobe After Effects ](http://www.adobe.com/products/aftereffects.html)动画并导出为json文件，继而在手机上通过React Native加载该json文件从而渲染出矢量动画。
 
