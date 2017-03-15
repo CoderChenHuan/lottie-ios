@@ -21,8 +21,7 @@ Lottie 也创造性地支持原生的UIViewController 的转场动画。
 ![](https://github.com/airbnb/lottie-ios/raw/master/_Gifs/Examples3.gif)
 ![](https://github.com/airbnb/lottie-ios/raw/master/_Gifs/Examples4.gif)
 
-<h2>使用Lottie</h2>
-
+## 使用Lottie
 Lottie支持iOS 8 及其以上系统。当我们把动画需要的images资源文件添加到Xcode的目标工程的后，Lottie 就可以通过JSON文件或者包含了JSON文件的URL来加载动画。
 
 最简单的方式是用LOTAnimationView来使用它
@@ -54,7 +53,7 @@ CGPoint translation = [gesture getTranslationInView:self.view];
 CGFloat progress = translation.y / self.view.bounds.size.height;
 animationView.animationProgress = progress;
 ```
- ////////想要任意视图来给Lottie View中的动画图层做遮罩吗 ？只要你知道After Effects中对应的图层的名字，那就是小菜一碟的事了：
+想要任意视图来给Lottie View中的动画图层做遮罩吗 ？只要你知道After Effects中对应的图层的名字，那就是小菜一碟的事了：
 ```
 UIView *snapshot = [self.view snapshotViewAfterScreenUpdates:YES];
 [lottieAnimation addSubview:snapshot toLayerNamed:@"AfterEffectsLayerName"];
@@ -81,8 +80,7 @@ Lottie 带有一个`UIViewController`动画控制器，可以用来自定义转�
 ```
 如果你的动画会很频繁地重用，`LOTAnimationView`有一个内置的LRU缓存策略。
 
-<h2>Swift 支持</h2>
-----
+## Swift 支持
 
 Lottie 在Swift下也表现的很好！在你的swift 类上方简单地`improt Lottie`，然后就可以按照下面的方式使用Lottie了：
 ```
@@ -93,41 +91,53 @@ animationView?.play(completion: { (finished) in
   // Do Something
 })
 ```
+## 支持的After Effects 的特性
 
-<h2>支持的After Effects 的特性</h2>
------
-<h3>关键帧插值（Keyframe Interpolation）</h3>
+### 关键帧插值（Keyframe Interpolation）
+
+---
+
 - 线性插值(Linear Interpolation)
 - 贝塞尔插值(Bezier Interpolation)
 - 冻结关键帧插值(Hold Interpolation)
 - 浮动关键帧插值(Rove Across Time)
 - 空间贝塞尔曲线(Spatial Bezier)
 
-<h3>固体(Solids)</h3>
-----------
+### 固体(Solids)
+
+---
+
 - 锚点变换(Transform Anchor Point)
 - 位置变换(Transform Position)
 - 缩放变换(Transform Scale)
 - 旋转变换(Transform Rotation)
 - 透明度变换(Transform Opacity)
 
-<h3>遮罩(Masks)</h3>
+### 遮罩(Masks)
+
 -----
+
 - 路径(Path)
 - 透明度(Opacity)
 - 多个遮罩(叠加的) [Multiple Masks (additive)]
 
-<h3>轨道遮罩(Track Mattes)</h3>
------
+### 轨道遮罩(Track Mattes)
+
+---
+
 - Alpha蒙版(Alpha Matte)
 
-<h3>父子级关系(Parenting)</h3>
------
+### 父子级关系(Parenting)
+
+---
+
 - 多个父子级关系(Multiple Parenting)
 - 无父子级关系(Nulls)
 
-<h3>形状图层(Shape Layers)</h3>
------
+### 形状图层(Shape Layers)
+
+---
+
 - 锚点(Anchor Point)
 - 位置(Position)
 - 缩放(Scale)
@@ -139,27 +149,35 @@ animationView?.play(completion: { (finished) in
 - 椭圆(所有属性）[Elipse (All properties)]
 - 多条路径的组合 (Multiple paths in one group)
 
-<h3>描边(shape layer) ［Stroke (shape layer)］</h3>
------
+#### 描边(shape layer) ［Stroke (shape layer)］
+
+---
+
 - 描边颜色(Stroke Color)
 - 描边透明度(Stroke Opacity)
 - 描边宽度(Stroke Width)
 - 描边接头样式(Line Cap)
 - 虚线(Dashes)
 
-<h3>填充(shape layer)</h3>
------
+#### 填充(shape layer)
+
+---
+
 - 填充颜色(Fill Color)
 - 填充透明度(Fill Opacity)
 
-<h3>裁切路径(shape layer) [Trim Paths (shape layer)]</h3>
------
+#### 裁切路径(shape layer) [Trim Paths (shape layer)]
+
+---
+
 - 裁切路径的起始点(Trim Paths Start)
 - 裁切路径的终点(Trim Paths End)
 - 裁切路径的偏移(Trim Paths Offset)
 
-<h3>图层特性(Layer Features)</h3>
------
+#### 图层特性(Layer Features)
+
+---
+
 - 图层组合(Precomps)
 - 图像图层(Image Layers)
 - 形状图层(Shape Layers)
@@ -168,8 +186,10 @@ animationView?.play(completion: { (finished) in
 - 父子级关系图层Layers(Parenting Layers)
 - Alpha蒙板图层(Alpha Matte Layers)
 
-<h3>目前还不支持的After Effects 特性</h3>
------
+## 目前还不支持的After Effects 特性
+
+---
+
 - 奇偶绕组路径(Even-Odd winding paths)
 - 合并形状(Merge Shapes)
 - 裁切路径中的个别裁切形状功能(Trim Shapes Individually feature of Trim Paths)
@@ -179,9 +199,11 @@ animationView?.play(completion: { (finished) in
 - 多边形形状（有一种临时方案是通过转换为矢量路径来解决）[Polystar shapes (Can convert to vector path as a workaround)]
 - 反相Alpha蒙板(Alpha inverted mask)
 
-<h2>安装Lottie</h2>
------
-<h3>CocoaPods</h3>
+## 安装Lottie
+
+---
+
+### CocoaPods
 在你的podfile中添加：
 `pod 'lottie-ios'`
 
@@ -189,44 +211,49 @@ animationView?.play(completion: { (finished) in
 
 `pod install`
 
-<h3>Carthage</h3>
+### Carthage
 
 安装Carthage([](https://github.com/Carthage/Carthage)) 向你的Cartfile添加Lottie：
 `github "airbnb/lottie-ios" "master"`
 运行
 `carthage update`
 
-<h2>试试看</h2>
------
+## 试试看
+
+---
+
 Lottie入驻了Cocoapods！通过Cocoapod获取或克隆这个仓库,下载完成后导入Lottie`#import <Lottie / Lottie.h>`，并尝试使用示例代码。
 
 用Carthage尝试。 在应用程序目标“常规”选项卡部分，从Carthage新生成的Carthage / Build / iOS目录中将lottie-ios.framework 拖放“Linked Frameworks and Libraries”下。
 
-<h2>社区贡献</h2>
+## 社区贡献
 - [Xamarin bindings](https://github.com/martijn00/LottieXamarin)
 - [NativeScript bindings](https://github.com/bradmartin/nativescript-lottie)
 - [Appcelerator Titanium bindings](https://github.com/m1ga/ti.animation)
 - 由 [Alex Pawlowski](https://github.com/pawlowskialex)添加的对MacOS的支持
 
-<h2>替补方案</h2>
------
+## 替补方案
+
+---
+
 1. 手动地创建动画。手动创建动画对于设计师以及iOS、Android工程师而言意味着付出巨额的时间。通常很难，即使花费这么多时间来开发动画也几乎很难达到理想的效果。
 2. [Facebook Keyframes](https://github.com/facebookincubator/Keyframes)。 Keyframes是专门用来构建用户界面的， 是FaceBook的一个很棒，很新的库。但是Keyframes不支持一些Lottie所能支持的特性，比如： 遮罩，蒙版，裁切路径，虚线样式还有很多。
 3. Gifs。Gifs 占用的大小是bodymovin生成的JSON大小的2倍还多，并且渲染的尺寸是固定的，并不能放大来适应更大更高分辨率的屏幕。
 4. Png序列桢动画。 Png序列桢动画 甚至比gifs更糟糕，它们的文件大小通常是 bodymovin json文件大小的30-50倍，并且也不能被放大。
 
-<h2>为什么叫Lottie？</h2>
+## 为什么叫Lottie？
+
 Lottie以德国电影导演(剪影动画的最早的开拓者)命名。 她最着名的电影是“阿赫迈德王子历险记”（1926年） - 最古老的长篇动画电影。比华特迪士尼的长篇电影白雪公主和七个小矮人（1937）早十多年[The art of Lotte Reineger](https://www.youtube.com/watch?v=LvU55CUw5Ck&feature=youtu.be)
 
-<h2>贡献</h2>
+## 贡献
 
 贡献者是非常受欢迎的。 只需上传项目并且包含您的更改说明。
 如果你想添加更多的JSON文件，随意这样做！
 
-<h2>问题或者功能需求？</h2>
+##### 问题或者功能需求？
 可以在github的issues专栏上提出任何超乎预期崩溃问题。如果After Effects 文件并没有起作用的话，请在issue上附上它。没有源文件来排除故障是相当困难的。
 
-<h2>技术路线(没有特别的顺序)</h2>
+## 技术路线(没有特别的顺序)
 - 添加了对交互转场动画的支持
 - 添加了对父类自动添加子类，移动／缩放的支持
 - 通过代码来改变动画的行为
