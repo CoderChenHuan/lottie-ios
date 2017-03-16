@@ -259,7 +259,9 @@ Lottie以德国电影导演(剪影动画的最早的开拓者)命名。 她最�
 空间贝塞尔曲线：
 在AE中，对于两个关键帧（keyframes）之间的插值（interpolation）来说，有空间插值（spatial interpolation）和时间插值（temporal interpolation）2种属性基本上，时间差值是必有的，就是我们平时调时间曲线用到的，空间插值是对某些属性的关键帧可选的，比如位移（position），有位移就有路径，那个路径就可以做贝塞尔插值，此时就是空间插值。
 * 对scale的关键帧，查看插值选项，空间插值那里是不可选的
+
 ![](http://omw76ivcx.bkt.clouddn.com/Keyframe%20Interpolation%20Scale.png)
+
 * 对position调出这个面板，就是可选的了
 
 ![](http://omw76ivcx.bkt.clouddn.com/Keyframe%20Interpolation%20Position.png)
