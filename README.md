@@ -103,7 +103,7 @@ animationView?.play(completion: { (finished) in
 - 浮动关键帧插值(Rove Across Time)
 - 空间贝塞尔曲线(Spatial Bezier)
 
-### 固体(Solids)
+### 固态(Solids)
 
 ---
 
@@ -182,7 +182,7 @@ animationView?.play(completion: { (finished) in
 - 图像图层(Image Layers)
 - 形状图层(Shape Layers)
 - 空图层(Null Layers)
-- 固体图层(Solid Layers)
+- 固态层(Solid Layers)
 - 父子级关系图层Layers(Parenting Layers)
 - Alpha蒙板图层(Alpha Matte Layers)
 
