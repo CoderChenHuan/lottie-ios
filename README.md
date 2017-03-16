@@ -5,9 +5,10 @@ Lottie 应用于iOS、MacOS(以及[Android](https://github.com/airbnb/lottie-and
 * 本文译文地址：[CRAnimation/lottie-ios](https://github.com/CRAnimation/lottie-ios)
 * 翻译：小9
 * 校正：熊熊
+* 术语指导：西西
 * QQ群：547897182（iOS动效特工队）
 
-Lottie 是一个可应用于Andriod和iOS的动画库，它通过[bodymovin](https://github.com/bodymovin/bodymovin)插件来解析[Adobe After Effects ](http://www.adobe.com/products/aftereffects.html)动画并导出为json文件，继而在手机上通过React Native加载该json文件从而渲染出矢量动画。
+Lottie 是一个可应用于Andriod和iOS的动画库【术1】，它通过[bodymovin](https://github.com/bodymovin/bodymovin)插件来解析[Adobe After Effects ](http://www.adobe.com/products/aftereffects.html)动画并导出为json文件，通过手机端原生的方式或者通过React Native的方式渲染出矢量动画。
 
 这是前所未有的方式，设计师可以创作并且运行优美的动画而不需要工程师煞费苦心地通过手动调整的方式来重现动画。由于动画是通过json来加载的，使得动画源文件只需占用极小的空间就能完成相当复杂的效果！Lottie可以用于播放动画、调整尺寸、循环播放、加速、减速、甚至是精致的交互。
 
@@ -100,8 +101,8 @@ animationView?.play(completion: { (finished) in
 - 线性插值(Linear Interpolation)
 - 贝塞尔插值(Bezier Interpolation)
 - 冻结关键帧插值(Hold Interpolation)
-- 浮动关键帧插值(Rove Across Time)
-- 空间贝塞尔曲线(Spatial Bezier)
+- 漂浮穿梭时间(根据前后关键帧，自动调整时间点，以保持一致速率) [Rove Across Time]
+- 空间贝塞尔曲线(Spatial Bezier)【术2】
 
 ### 固态(Solids)
 
@@ -178,7 +179,7 @@ animationView?.play(completion: { (finished) in
 
 ---
 
-- 图层组合(Precomps)
+- 预合成(Precomps)
 - 图像图层(Image Layers)
 - 形状图层(Shape Layers)
 - 空图层(Null Layers)
@@ -188,12 +189,12 @@ animationView?.play(completion: { (finished) in
 
 ## 目前还不支持的After Effects 特性
 
-- 奇偶绕组路径(Even-Odd winding paths)
+- 形状图层填充规则（奇偶/非零缠绕）[Even-Odd winding paths]【术3】
 - 合并形状(Merge Shapes)
 - 裁切路径中的个别裁切形状功能(Trim Shapes Individually feature of Trim Paths)
 - 表达式(Expressions)
-- 3D图层支持(3d Layer support)
-- 渐变(Gradients)
+- 3D图层(3d Layer support)
+- 图层样式渐变(Gradients)
 - 多边形形状（有一种临时方案是通过转换为矢量路径来解决）[Polystar shapes (Can convert to vector path as a workaround)]
 - 反相Alpha蒙板(Alpha inverted mask)
 
@@ -226,7 +227,7 @@ Lottie入驻了Cocoapods！通过Cocoapod获取或克隆这个仓库,下载完�
 - 由 [Alex Pawlowski](https://github.com/pawlowskialex)添加的对MacOS的支持
 
 ## 替补方案
-1. 手动地创建动画。手动创建动画对于设计师以及iOS、Android工程师而言意味着付出巨额的时间。通常很难，即使花费这么多时间来开发动画也几乎很难达到理想的效果。
+1. 手动地创建动画。手动创建动画对于设计师以及iOS、Android工程师而言意味着付出巨额的时间。通常很难，通常很难，甚至不可能证明花费这么多时间来获得动画是正确的。
 2. [Facebook Keyframes](https://github.com/facebookincubator/Keyframes)。 Keyframes是专门用来构建用户界面的， 是FaceBook的一个很棒，很新的库。但是Keyframes不支持一些Lottie所能支持的特性，比如： 遮罩，蒙版，裁切路径，虚线样式还有很多。
 3. Gifs。Gifs 占用的大小是bodymovin生成的JSON大小的2倍还多，并且渲染的尺寸是固定的，并不能放大来适应更大更高分辨率的屏幕。
 4. Png序列桢动画。 Png序列桢动画 甚至比gifs更糟糕，它们的文件大小通常是 bodymovin json文件大小的30-50倍，并且也不能被放大。
@@ -249,3 +250,24 @@ Lottie以德国电影导演(剪影动画的最早的开拓者)命名。 她最�
 - 渐变
 - LOTAniamtedButton
 - 重复创建对象机制
+
+## 术语解释
+### 术1
+动画库：
+此处的动画库意指Lottie动画框架。
+### 术2
+空间贝塞尔曲线：
+在AE中，对于两个关键帧（keyframes）之间的插值（interpolation）来说，有空间插值（spatial interpolation）和时间插值（temporal interpolation）2种属性基本上，时间差值是必有的，就是我们平时调时间曲线用到的，空间插值是对某些属性的关键帧可选的，比如位移（position），有位移就有路径，那个路径就可以做贝塞尔插值，此时就是空间插值。
+* 对scale的关键帧，查看插值选项，空间插值那里是不可选的
+![](http://omw76ivcx.bkt.clouddn.com/Keyframe%20Interpolation%20Scale.png)
+* 对position调出这个面板，就是可选的了
+![](http://omw76ivcx.bkt.clouddn.com/Keyframe%20Interpolation%20Position.png)
+* AE曲线概念图
+![](http://omw76ivcx.bkt.clouddn.com/AE%E6%97%B6%E9%97%B4%E6%9B%B2%E7%BA%BF.png)
+
+### 术3
+“形状图层填充规则（奇偶/非零缠绕）”：
+* 在AE中，目前是默认支持的非零缠绕
+![](http://omw76ivcx.bkt.clouddn.com/None-Zero%20Widding.png)
+* 所以本文中的“Even-Odd winding paths”应指的是“形状图层填充规则（奇偶/非零缠绕）”
+![](http://omw76ivcx.bkt.clouddn.com/Even-Odd.png)
