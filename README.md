@@ -227,7 +227,7 @@ Lottie入驻了Cocoapods！通过Cocoapod获取或克隆这个仓库,下载完�
 - 由 [Alex Pawlowski](https://github.com/pawlowskialex)添加的对MacOS的支持
 
 ## 替补方案
-1. 手动地创建动画。手动创建动画对于设计师以及iOS、Android工程师而言意味着付出巨额的时间。通常很难，通常很难，甚至不可能证明花费这么多时间来获得动画是正确的。
+1. 手动地创建动画。手动创建动画对于设计师以及iOS、Android工程师而言意味着付出巨额的时间。通常很难，甚至不可能证明花费这么多时间来获得动画是正确的。
 2. [Facebook Keyframes](https://github.com/facebookincubator/Keyframes)。 Keyframes是专门用来构建用户界面的， 是FaceBook的一个很棒，很新的库。但是Keyframes不支持一些Lottie所能支持的特性，比如： 遮罩，蒙版，裁切路径，虚线样式还有很多。
 3. Gifs。Gifs 占用的大小是bodymovin生成的JSON大小的2倍还多，并且渲染的尺寸是固定的，并不能放大来适应更大更高分辨率的屏幕。
 4. Png序列桢动画。 Png序列桢动画 甚至比gifs更糟糕，它们的文件大小通常是 bodymovin json文件大小的30-50倍，并且也不能被放大。
