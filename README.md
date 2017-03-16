@@ -261,12 +261,15 @@ Lottie以德国电影导演(剪影动画的最早的开拓者)命名。 她最�
 * 对scale的关键帧，查看插值选项，空间插值那里是不可选的
 <br/>
 ![](http://omw76ivcx.bkt.clouddn.com/Keyframe%20Interpolation%20Scale.png)
+<br/>
 * 对position调出这个面板，就是可选的了
 <br/>
 ![](http://omw76ivcx.bkt.clouddn.com/Keyframe%20Interpolation%20Position.png)
+<br/>
 * AE曲线概念图
 <br/>
 ![](http://omw76ivcx.bkt.clouddn.com/AE%E6%97%B6%E9%97%B4%E6%9B%B2%E7%BA%BF.png)
+<br/>
 
 ### 术3
 “形状图层填充规则（奇偶/非零缠绕）”：
