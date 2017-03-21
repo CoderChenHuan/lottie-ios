@@ -1,8 +1,9 @@
-Lottie 应用于iOS、MacOS(以及[Android](https://github.com/airbnb/lottie-android) 和[React Native](https://github.com/airbnb/lottie-react-native))
+Lottie 应用于iOS、MacOS(以及[Android](CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android) 和[React Native](https://github.com/CRAnimation/lottie-react-native))
 ------
 * 本文由CRAnimation团队翻译
-* 本项目iOS版本原地址：[airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
-* 本文译文地址：[CRAnimation/lottie-ios](https://github.com/CRAnimation/lottie-ios)
+* Lottie-iOS译文地址：[CRAnimation/lottie-iOS](https://github.com/CRAnimation/lottie-ios)，[ Lottie-iOS原地址](https://github.com/airbnb/lottie-ios)
+* Lottie-Android译文地址：[CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android)，[ Lottie-Android译文原地址]https://github.com/bigxixi/lottie-android),[ Lottie-Android原地址](https://github.com/airbnb/lottie-android)
+* Lottie-React-Native译文地址：[CRAnimation/lottie-react-native](https://github.com/CRAnimation/lottie-react-native)，[ Lottie-React-Native原地址](https://github.com/airbnb/lottie-react-native)
 * 翻译：小9
 * 校正：熊熊
 * 术语指导：西西
