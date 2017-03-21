@@ -1,13 +1,14 @@
 Lottie 应用于iOS、MacOS(以及[Android](CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android) 和[React Native](https://github.com/CRAnimation/lottie-react-native))
 ------
 * 本文由CRAnimation团队翻译
-* Lottie-iOS译文地址：[CRAnimation/lottie-iOS](https://github.com/CRAnimation/lottie-ios)，[ Lottie-iOS原地址](https://github.com/airbnb/lottie-ios)
-* Lottie-Android译文地址：[CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android)，[ Lottie-Android译文原地址]https://github.com/bigxixi/lottie-android),[ Lottie-Android原地址](https://github.com/airbnb/lottie-android)
-* Lottie-React-Native译文地址：[CRAnimation/lottie-react-native](https://github.com/CRAnimation/lottie-react-native)，[ Lottie-React-Native原地址](https://github.com/airbnb/lottie-react-native)
+* 本项目原地址：[airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
+* Lottie-iOS译文地址：[CRAnimation/lottie-iOS](https://github.com/CRAnimation/lottie-ios)
+* Lottie-Android译文地址：[CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android)
+* Lottie-React-Native译文地址：[CRAnimation/lottie-react-native](https://github.com/CRAnimation/lottie-react-native)
 * 翻译：小9
 * 校正：熊熊
 * 术语指导：西西
-* QQ群：547897182（iOS动效特工队）
+* QQ群：547897182（iOS动效特工队，入群请提供个人主页货github账号）
 
 Lottie 是一个可应用于Andriod和iOS的动画库【术1】，它通过[bodymovin](https://github.com/bodymovin/bodymovin)插件来解析[Adobe After Effects ](http://www.adobe.com/products/aftereffects.html)动画并导出为json文件，通过手机端原生的方式或者通过React Native的方式渲染出矢量动画。
 
