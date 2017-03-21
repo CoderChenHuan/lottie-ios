@@ -1,4 +1,4 @@
-Lottie 应用于iOS、MacOS(以及[Android](CRAnimation/lottie-Android](https://github.com/CRAnimation/lottie-android) 和[React Native](https://github.com/CRAnimation/lottie-react-native))
+Lottie 应用于iOS、MacOS(以及[Android](https://github.com/CRAnimation/lottie-android) 和[React Native](https://github.com/CRAnimation/lottie-react-native))
 ------
 * 本文由CRAnimation团队翻译
 * 本项目原地址：[airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
